@@ -1,35 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Expandible from "./components/Expandible";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Expandible>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore dolores
+        praesentium harum natus ex quos fugit animi, laborum enim ut facere
+        maxime beatae quam accusamus, minus, fugiat tenetur nesciunt blanditiis
+        totam earum pariatur maiores perferendis quia? Dolorum, perferendis
+        architecto laboriosam officia minus, et ipsa quaerat fuga velit quod
+        error commodi provident qui deleniti nulla alias odio accusantium. Ipsa
+        necessitatibus dolorum molestias. Vel velit ut tempore natus,
+        accusantium, ducimus nemo neque in sint id optio ad hic magni?
+        Voluptates fugiat voluptas voluptate rem deleniti, perspiciatis
+        praesentium, maiores quod qui mollitia, itaque molestiae eos officiis.
+        Rem neque minima porro laborum quaerat. Mollitia.
+      </Expandible>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
